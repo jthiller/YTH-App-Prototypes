@@ -101,7 +101,7 @@
 - (IBAction)onQuestionsTap:(UITapGestureRecognizer *)sender {
     [UIView animateWithDuration:.2
                      animations:^{
-                         self.greenCircleView.frame = CGRectMake(-(self.homeMenuAreaView.frame.origin.x + self.questionsButtonView.frame.origin.x), -(self.homeMenuAreaView.frame.origin.y + self.questionsButtonView.frame.origin.y), 320, 64);
+                         self.greenCircleView.frame = CGRectMake(-(self.homeMenuAreaView.frame.origin.x + self.questionsButtonView.frame.origin.x), -(self.homeMenuAreaView.frame.origin.y + self.questionsButtonView.frame.origin.y), self.view.frame.size.width, 64);
                          self.greenCircleView.layer.cornerRadius = 0;
                      }];
 }
